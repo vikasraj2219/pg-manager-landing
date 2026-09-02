@@ -3,7 +3,6 @@ export const DASHBOARD_URL = 'https://pg.waghmare.site/dashboard'
 
 export const navLinks = [
   { label: 'Product', href: '#showcase' },
-  { label: 'Features', href: '#features' },
   { label: 'Solutions', href: '#solutions' },
   { label: 'Pricing', href: '#pricing' },
 ]
@@ -60,7 +59,7 @@ export const showcaseTabs: ShowcaseTab[] = [
     tab: 'Rooms & Beds',
     category: 'Rooms & beds',
     headline: "Know exactly what's available.",
-    body: 'Every bed shows a live status — available, occupied, reserved, in notice period or under maintenance — so you can allocate the next tenant in seconds.',
+    body: 'Every bed shows a live status \u2014 available, occupied, reserved, in notice period or under maintenance \u2014 so you can allocate the next tenant in seconds.',
     points: ['Bed-level occupancy grid', 'Reserve beds ahead of check-in', 'Beds blocked automatically for repairs'],
     visual: 'roombed',
   },
@@ -69,8 +68,8 @@ export const showcaseTabs: ShowcaseTab[] = [
     tab: 'Tenants',
     category: 'Tenant management',
     headline: 'Every tenant, every detail, organized.',
-    body: 'Each tenant has one record — contact details, room and bed, rent, deposit, documents and stay history — instead of being split across notebooks and phone contacts.',
-    points: ['Full tenant profile in one screen', 'Deposit and rent linked automatically', 'Searchable across all properties'],
+    body: 'Each tenant has one record \u2014 contact details, room and bed, rent, deposit, documents and stay history \u2014 instead of being split across notebooks and phone contacts.',
+    points: ['Full tenant profile in one screen', 'KYC & document status in the same record', 'Searchable across all properties'],
     visual: 'tenant',
   },
   {
@@ -120,90 +119,6 @@ export const showcaseTabs: ShowcaseTab[] = [
   },
 ]
 
-export const bentoCards = [
-  {
-    id: 'property-occ',
-    title: 'Property & occupancy',
-    body: 'Every floor, room and bed, with live status across your whole portfolio.',
-    visual: 'roombed',
-    size: 'lg',
-  },
-  {
-    id: 'tenants',
-    title: 'Tenant management',
-    body: 'One record per tenant — contact, rent, deposit and stay history.',
-    visual: 'tenant',
-    size: 'md',
-  },
-  {
-    id: 'rent-payments',
-    title: 'Rent & payments',
-    body: 'Collection tracked daily, with pending and overdue rent flagged.',
-    visual: 'payments',
-    size: 'md',
-  },
-  {
-    id: 'analytics',
-    title: 'Business analytics',
-    body: 'Revenue and occupancy trends across every property you run.',
-    visual: 'analytics',
-    size: 'lg',
-  },
-  {
-    id: 'maintenance',
-    title: 'Maintenance',
-    body: 'Requests tracked from report to resolution.',
-    visual: 'maintenance',
-    size: 'sm',
-  },
-  {
-    id: 'kyc',
-    title: 'Documents & KYC',
-    body: 'Tenant IDs and agreements, verified and stored.',
-    visual: 'kyc',
-    size: 'sm',
-  },
-]
-
-export const financialCarousel = [
-  {
-    id: 'rent',
-    title: 'Rent',
-    body: "Track what's collected and what's pending, by tenant and by property.",
-    visual: 'rent',
-  },
-  {
-    id: 'billing',
-    title: 'Billing',
-    body: 'Manage recurring charges and generate bills automatically each cycle.',
-    visual: 'rent',
-  },
-  {
-    id: 'payments',
-    title: 'Payments',
-    body: "Track payment history and today's collections in one place.",
-    visual: 'payments',
-  },
-  {
-    id: 'expenses',
-    title: 'Expenses',
-    body: 'Understand operating costs by category and by property.',
-    visual: 'expenses',
-  },
-  {
-    id: 'revenue',
-    title: 'Revenue',
-    body: 'See business performance across your entire portfolio.',
-    visual: 'analytics',
-  },
-]
-
-export const operationsBento = [
-  { id: 'maintenance', title: 'Maintenance', body: 'Requests routed and tracked to resolution.', visual: 'maintenance' },
-  { id: 'staff', title: 'Staff', body: 'Role-based access, scoped by property.', visual: 'staff' },
-  { id: 'kyc', title: 'Documents & KYC', body: 'Verification status per tenant.', visual: 'kyc' },
-]
-
 export const personas = [
   { title: 'PG owners', body: 'Manage your entire property from one system.' },
   { title: 'Hostel operators', body: 'Keep rooms, tenants and operations organized.' },
@@ -220,10 +135,6 @@ export const howItWorks = [
   { step: '05', title: 'Start managing', body: 'Track rent, payments, expenses and maintenance from day one.' },
 ]
 
-export const workflowSteps = [
-  'Property', 'Rooms', 'Beds', 'Tenants', 'KYC', 'Rent', 'Payments', 'Expenses', 'Maintenance', 'Reports',
-]
-
 export const securityPoints = [
   { title: 'Secure authentication', body: 'Access is protected at every sign-in.' },
   { title: 'Role-based access', body: 'Owners, managers and staff see only what their role needs.' },
@@ -232,13 +143,43 @@ export const securityPoints = [
   { title: 'Controlled permissions', body: 'Access can be scoped by property, not just by role.' },
 ]
 
+export type PricingPlan = {
+  name: string
+  tagline: string
+  scale: string
+  features: string[]
+  featured?: boolean
+}
+
+export const pricingPlans: PricingPlan[] = [
+  {
+    name: 'Starter',
+    tagline: 'For a single PG or hostel property.',
+    scale: 'For one property',
+    features: ['Property, room & bed setup', 'Tenant management & KYC', 'Rent & billing', 'Payments tracking'],
+  },
+  {
+    name: 'Growth',
+    tagline: 'For an operation adding properties.',
+    scale: 'For a growing portfolio',
+    features: ['Everything in Starter', 'Multiple properties, one login', 'Expense tracking', 'Maintenance workflow', 'Staff accounts & role-based access'],
+    featured: true,
+  },
+  {
+    name: 'Portfolio',
+    tagline: 'For multi-property operators & PG chains.',
+    scale: 'For larger portfolios',
+    features: ['Everything in Growth', 'Consolidated portfolio analytics', 'Unlimited staff accounts', 'Priority support'],
+  },
+]
+
 export const faqs = [
   { q: 'What is PG Manager?', a: 'PG Manager is a management platform built for PG and hostel businesses. It brings properties, rooms, beds, tenants, rent, payments, expenses and maintenance into one system, in place of spreadsheets, paper registers and WhatsApp.' },
   { q: 'Who is PG Manager for?', a: 'PG owners, hostel operators, multi-property owners, property managers and co-living operators who currently run their operations manually or across disconnected tools.' },
   { q: 'Can I manage multiple properties?', a: 'Yes. You can add multiple properties to one login and see consolidated occupancy, revenue and expense reporting across all of them.' },
-  { q: 'Can I manage rooms and beds?', a: 'Yes. You can configure floors, rooms and individual beds, and track each bed\u2019s status — available, occupied, reserved, in notice period or under maintenance.' },
+  { q: 'Can I manage rooms and beds?', a: 'Yes. You can configure floors, rooms and individual beds, and track each bed\u2019s status \u2014 available, occupied, reserved, in notice period or under maintenance.' },
   { q: 'Can I manage tenants?', a: 'Yes. Each tenant has one record covering contact details, room and bed, rent, deposit, documents and stay history.' },
   { q: 'Can I track rent and payments?', a: 'Yes. Rent and other charges are calculated each billing cycle, and payments are recorded against each tenant with a full history.' },
   { q: 'Can I track expenses?', a: 'Yes. Expenses are logged by category and property, so you can see revenue against costs.' },
-  { q: 'How do I get started?', a: 'Open PG Manager and set up your account — add your first property, configure rooms and beds, then add your tenants.' },
+  { q: 'How do I get started?', a: 'Open PG Manager and set up your account \u2014 add your first property, configure rooms and beds, then add your tenants.' },
 ]

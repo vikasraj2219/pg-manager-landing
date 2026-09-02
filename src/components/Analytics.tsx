@@ -1,10 +1,11 @@
 import BrowserFrame from './BrowserFrame'
 import AnalyticsVisual from './visuals/AnalyticsVisual'
+import { PRODUCT_URL } from '../lib/data'
 
 const metrics = [
-  { label: 'Revenue', value: '₹4.8L' },
-  { label: 'Expenses', value: '₹1.9L' },
   { label: 'Occupancy', value: '92%' },
+  { label: 'Active tenants', value: '38' },
+  { label: 'Available beds', value: '8' },
   { label: 'Collections', value: '93%' },
 ]
 
@@ -14,8 +15,11 @@ export default function Analytics() {
       <div className="container-content grid lg:grid-cols-[1fr,1.2fr] gap-12 items-center">
         <div>
           <h2 className="text-3xl md:text-[2.6rem] leading-[1.12] max-w-md">
-            Turn your data into better decisions.
+            Your business, backed by data.
           </h2>
+          <p className="mt-5 text-ink/60 text-base leading-relaxed max-w-sm">
+            Revenue, occupancy and collections tracked over time, so you can see how each property is actually performing &mdash; not just this month, but the trend behind it.
+          </p>
           <div className="mt-8 grid grid-cols-2 gap-3 max-w-sm">
             {metrics.map((m) => (
               <div key={m.label} className="rounded border border-ink/10 bg-paper-card p-4">
@@ -27,6 +31,12 @@ export default function Analytics() {
           <p className="mt-6 text-xs text-ink/40 max-w-sm">
             Figures shown are illustrative demo data.
           </p>
+          <a
+            href={PRODUCT_URL}
+            className="mt-6 inline-block text-sm font-medium text-ink border-b border-ink/30 hover:border-ink transition-colors"
+          >
+            Open PG Manager →
+          </a>
         </div>
         <BrowserFrame label="pg.waghmare.site/analytics">
           <AnalyticsVisual />

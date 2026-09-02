@@ -27,10 +27,8 @@ export default function Navbar() {
               : 'bg-transparent border border-transparent px-2 py-2'
           }`}
         >
-          <a href="#top" className="flex items-center gap-2">
-            <span className="h-7 w-7 rounded-[4px] bg-ink flex items-center justify-center">
-              <span className="text-brass-soft font-serif text-sm">P</span>
-            </span>
+          <a href="#top" className="flex items-center gap-2.5">
+            <img src="/images/logo.png" alt="PG Manager" className="h-8 w-8 rounded-[6px] object-cover" />
             <span className="font-serif text-base text-ink">PG Manager</span>
           </a>
 

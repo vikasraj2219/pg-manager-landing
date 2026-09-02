@@ -1,8 +1,8 @@
 import { PRODUCT_URL } from '../lib/data'
 
 const columns = [
-  { title: 'Product', links: [{ label: 'Product', href: '#showcase' }, { label: 'Features', href: '#features' }, { label: 'Solutions', href: '#solutions' }] },
-  { title: 'Account', links: [{ label: 'Pricing', href: '#pricing' }, { label: 'Login', href: PRODUCT_URL }, { label: 'Open PG Manager', href: PRODUCT_URL }] },
+  { title: 'Product', links: [{ label: 'Product', href: '#showcase' }, { label: 'Solutions', href: '#solutions' }, { label: 'Pricing', href: '#pricing' }] },
+  { title: 'Account', links: [{ label: 'Login', href: PRODUCT_URL }, { label: 'Open PG Manager', href: PRODUCT_URL }] },
   { title: 'Legal', links: [{ label: 'Privacy', href: '#' }, { label: 'Terms', href: '#' }] },
 ]
 
@@ -12,10 +12,8 @@ export default function Footer() {
       <div className="container-content">
         <div className="grid sm:grid-cols-2 lg:grid-cols-[1.4fr,repeat(3,1fr)] gap-10">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="h-7 w-7 rounded-[4px] bg-ink flex items-center justify-center">
-                <span className="text-brass-soft font-serif text-sm">P</span>
-              </span>
+            <div className="flex items-center gap-2.5">
+              <img src="/images/logo.png" alt="PG Manager" className="h-8 w-8 rounded-[6px] object-cover" />
               <span className="font-serif text-base text-ink">PG Manager</span>
             </div>
             <p className="mt-4 text-sm text-ink/50 max-w-[220px]">
