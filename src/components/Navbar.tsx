@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { navLinks, PRODUCT_URL } from '../lib/data'
+import { navLinks, PRODUCT_URL, LOGIN_URL } from '../lib/data'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -45,7 +45,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href={PRODUCT_URL} className="text-sm text-ink/70 hover:text-ink transition-colors px-2">
+            <a href={LOGIN_URL} className="text-sm text-ink/70 hover:text-ink transition-colors px-2">
               Login
             </a>
             <a
@@ -80,7 +80,7 @@ export default function Navbar() {
               ))}
             </nav>
             <div className="flex flex-col gap-2 mt-3">
-              <a href={PRODUCT_URL} className="text-sm text-center py-2.5 border border-ink/15 rounded-sm text-ink">
+              <a href={LOGIN_URL} className="text-sm text-center py-2.5 border border-ink/15 rounded-sm text-ink">
                 Login
               </a>
               <a

@@ -1,5 +1,6 @@
 export const PRODUCT_URL = 'https://nilaaya.waghmare.site'
-export const DASHBOARD_URL = 'https://nilaaya.waghmare.site/dashboard'
+export const DASHBOARD_URL = 'https://pg.waghmare.site/dashboard'
+export const LOGIN_URL = 'https://pg.waghmare.site/login'
 
 export const navLinks = [
   { label: 'Product', href: '#showcase' },
