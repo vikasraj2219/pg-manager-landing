@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 export default function BrowserFrame({
   children,
-  label = 'pg.waghmare.site/dashboard',
+  label = 'nilaaya/dashboard',
 }: {
   children: ReactNode
   label?: string

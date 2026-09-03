@@ -38,7 +38,7 @@ export default function Analytics() {
             Open PG Manager →
           </a>
         </div>
-        <BrowserFrame label="pg.waghmare.site/analytics">
+        <BrowserFrame label="nilaaya/analytics">
           <AnalyticsVisual />
         </BrowserFrame>
       </div>

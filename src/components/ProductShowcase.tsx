@@ -69,7 +69,7 @@ export default function ProductShowcase() {
               exit={{ opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             >
-              <BrowserFrame label={`pg.waghmare.site/${active.id}`}>
+              <BrowserFrame label={`nilaaya/${active.id}`}>
                 <Visual />
               </BrowserFrame>
             </motion.div>

@@ -1,5 +1,5 @@
-export const PRODUCT_URL = 'https://pg.waghmare.site'
-export const DASHBOARD_URL = 'https://pg.waghmare.site/dashboard'
+export const PRODUCT_URL = 'https://nilaaya.waghmare.site'
+export const DASHBOARD_URL = 'https://nilaaya.waghmare.site/dashboard'
 
 export const navLinks = [
   { label: 'Product', href: '#showcase' },

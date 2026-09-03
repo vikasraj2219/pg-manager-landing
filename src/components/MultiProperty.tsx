@@ -20,7 +20,7 @@ export default function MultiProperty() {
             Open PG Manager →
           </a>
         </div>
-        <BrowserFrame label="pg.waghmare.site/portfolio">
+        <BrowserFrame label="nilaaya/portfolio">
           <MultiPropertyVisual />
         </BrowserFrame>
       </div>
