@@ -19,6 +19,8 @@ export default function StickyMobileCTA() {
     >
       <a
         href={PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
         className="block text-center bg-ink text-paper py-3.5 rounded-sm text-sm font-medium shadow-[0_4px_20px_rgba(18,21,27,0.18)]"
       >
         Open PG Manager →

@@ -13,6 +13,8 @@ export default function FinalCTA() {
         <div className="mt-9 flex flex-wrap justify-center gap-4">
           <a
             href={PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-paper text-ink px-7 py-3.5 rounded-sm text-sm font-medium hover:bg-paper-dim transition-colors"
           >
             Open PG Manager →

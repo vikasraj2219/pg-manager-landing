@@ -48,6 +48,8 @@ export default function PricingPreview() {
               </ul>
               <a
                 href={PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
                 className={`mt-8 text-center text-sm font-medium py-3 rounded-sm transition-colors ${
                   plan.featured
                     ? 'bg-paper text-ink hover:bg-paper-dim'

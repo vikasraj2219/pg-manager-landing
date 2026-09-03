@@ -30,6 +30,8 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
               href={PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
               className="bg-ink text-paper px-6 py-3.5 rounded-sm text-sm font-medium hover:bg-ink-soft transition-colors"
             >
               Open PG Manager →

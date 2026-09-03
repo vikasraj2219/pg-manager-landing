@@ -45,11 +45,18 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href={LOGIN_URL} className="text-sm text-ink/70 hover:text-ink transition-colors px-2">
+            <a
+              href={LOGIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-ink/70 hover:text-ink transition-colors px-2"
+            >
               Login
             </a>
             <a
               href={PRODUCT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium bg-ink text-paper px-4 py-2 rounded-sm hover:bg-ink-soft transition-colors"
             >
               Open PG Manager →
@@ -80,11 +87,18 @@ export default function Navbar() {
               ))}
             </nav>
             <div className="flex flex-col gap-2 mt-3">
-              <a href={LOGIN_URL} className="text-sm text-center py-2.5 border border-ink/15 rounded-sm text-ink">
+              <a
+                href={LOGIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-center py-2.5 border border-ink/15 rounded-sm text-ink"
+              >
                 Login
               </a>
               <a
                 href={PRODUCT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="text-sm text-center font-medium bg-ink text-paper py-2.5 rounded-sm"
               >

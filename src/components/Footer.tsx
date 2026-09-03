@@ -21,6 +21,8 @@ export default function Footer() {
             </p>
             <a
               href={PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
               className="mt-5 inline-block text-sm font-medium text-ink border-b border-ink/30 hover:border-ink transition-colors"
             >
               Open PG Manager →
